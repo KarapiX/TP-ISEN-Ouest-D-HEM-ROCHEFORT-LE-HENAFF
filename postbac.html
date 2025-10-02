@@ -1,22 +1,24 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISEN Ouest - Exemple</title>
+  <style>
 html {
-    font-family: Open Sans,sans-serif;
+  font-family: Open Sans, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-/* Conteneur principal du header */
+
+/* --- HEADER --- */
 .header-isen {
   background: #fff;
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* Organisation interne */
 .header-container {
-  max-width: 1400px; /* un peu plus large pour aérer */
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
@@ -24,29 +26,27 @@ html {
   justify-content: space-between;
 }
 
-/* Logo */
 .header-logo img {
-  height: 45px; /* logo moins haut */
+  height: 45px;
   width: auto;
 }
 
-/* Navigation */
 .header-nav {
-  background: #e30613; /* Rouge ISEN */
-  flex: 1; /* occupe toute la largeur dispo */
-  margin-left: 40px; /* espace entre logo et barre rouge */
+  background: #e30613;
+  flex: 1;
+  margin-left: 40px;
 }
 
 .header-nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-around; /* liens espacés sur toute la largeur */
+  justify-content: space-around;
   margin: 0;
   padding: 0;
 }
 
 .header-nav li {
-  flex: 1; /* chaque lien occupe une largeur égale */
+  flex: 1;
   text-align: center;
 }
 
@@ -64,6 +64,29 @@ html {
   text-decoration: underline;
 }
 
+/* --- CONTENU --- */
+.main-content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.main-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.main-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* --- FOOTER --- */
 .site-footer {
   background: #000;
   color: #fff;
@@ -169,10 +192,11 @@ html {
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
-
-    </style>
+  </style>
 </head>
 <body>
+
+<!-- HEADER -->
 <header class="header-isen">
   <div class="header-container">
     <!-- Logo -->
@@ -189,27 +213,51 @@ html {
   </div>
 </header>
 
+<!-- CONTENU PRINCIPAL -->
+<main class="main-content">
+  <p>
+    Formations post-bac
+  </p>
+  <p>
+    Chaque étudiant construit son propre parcours de formation sur 5 ans.
+  </p>
+  <p>
+    Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.
+  </p>
+  <p>
+    Au cours de ces 3 années, les élèves acquièrent une solide formation dans les sciences et les technologies numériques tout en approfondissant une spécialité dès la première année après le baccalauréat. Plusieurs passerelles sont possibles durant les 3 premières années si l’étudiant souhaite changer de cycle.
+  </p>
+  <p>
+    Après la deuxième année, il est possible de choisir une poursuite d’études sous statut étudiant ou d’opter pour un contrat d’apprentissage.
+  </p>
+  <p>
+    Au niveau Master 1, qu’il soit sous statut étudiant ou apprenti, chaque élève accède à un large choix de domaines professionnels sans concours ni critère de classement.
+  </p>
+
+  <img src="https://isen-ouest.fr/wp-content/uploads/2024/09/11/schema-des-etudes-isen-ouest-32.png" 
+       alt="Schéma des études ISEN Ouest">
+</main>
+
+<!-- FOOTER -->
 <footer class="site-footer">
   <div class="footer-container">
 
-    <!-- Colonne 1 : Logo + bouton -->
+    <!-- Colonne 1 : Logo -->
     <div class="footer-col footer-col-logo">
       <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
            alt="ISEN Ouest" class="footer-logo">
     </div>
 
-    <!-- Zone titres + colonnes 2-4 -->
+    <!-- Colonne 2 : liens -->
     <div class="footer-links-section">
-      <!-- Titre général -->
       <p class="footer-cities">Texte à venir</p>
-
+    </div>
 
   </div>
-
-  <!-- Bas de page -->
 </footer>
+
 <div class="footer-bottom">
-  &copy;
+  &copy; 2025 ISEN Ouest - Tous droits réservés
 </div>
 
 </body>
